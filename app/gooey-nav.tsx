@@ -12,8 +12,8 @@ interface GooeyNavProps {
 }
 
 const defaultItems: NavItem[] = [
-  { label: "Work", href: "#work" },
   { label: "About", href: "#about" },
+  { label: "Work", href: "#work" },
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
   { label: "Contact", href: "#contact" },
