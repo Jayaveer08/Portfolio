@@ -112,11 +112,11 @@ export default function HeroConsole() {
                   <pre className="term-code">
 {`{
   "name": "Jayaveer Nallapati",
-  "role": "Software Development Engineer (Backend & Full-Stack)",
-  "education": "B.Tech CSE (AI & ML) @ SIET (CGPA: 9.06)",
-  "focus": "FastAPI, Spring Boot, Python, Java, Testing & System Design",
-  "status": "Available for SDE / Full-Time Roles (2026-2027)",
-  "location": "Telangana, India"
+  "role": "Software Engineer & AI/ML Developer",
+  "education": "B.Tech CS (AI & ML) @ SIET",
+  "specialisation": "AI Engineering & Scalable Backends",
+  "status": "Available for Full-Time Roles (2026)",
+  "location": "Hyderabad, Telangana, India"
 }`}
                   </pre>
                 </div>
@@ -130,19 +130,19 @@ export default function HeroConsole() {
                   <div className="term-stack-list">
                     <div className="stack-group">
                       <span className="group-label">[Languages]</span>
-                      <span className="group-items">Python, Java, C, TypeScript, JavaScript, SQL</span>
+                      <span className="group-items">Java 17, Python, TypeScript, JavaScript, SQL, C++</span>
                     </div>
                     <div className="stack-group">
-                      <span className="group-label">[Backend]</span>
-                      <span className="group-items">FastAPI, Spring Boot, REST APIs, JWT, Spring Security</span>
+                      <span className="group-label">[Frameworks]</span>
+                      <span className="group-items">Spring Boot, React 18, Next.js, FastAPI, Node.js</span>
                     </div>
                     <div className="stack-group">
-                      <span className="group-label">[Testing &amp; QA]</span>
-                      <span className="group-items">Pytest, JUnit 5, Mockito, Test Plan Development, QA</span>
+                      <span className="group-label">[AI &amp; Data]</span>
+                      <span className="group-items">PyTorch, NLP, Supabase, MySQL, PostgreSQL, Redis</span>
                     </div>
                     <div className="stack-group">
-                      <span className="group-label">[Databases &amp; Cloud]</span>
-                      <span className="group-items">SQL, MongoDB, Supabase PostgreSQL, Docker, GitHub Actions</span>
+                      <span className="group-label">[DevOps/Tools]</span>
+                      <span className="group-items">Docker, Git, REST APIs, JWT Auth, Swagger UI</span>
                     </div>
                   </div>
                 </div>
@@ -155,20 +155,20 @@ export default function HeroConsole() {
                   </div>
                   <div className="term-metrics">
                     <div className="metric-row">
-                      <span className="metric-icon">⭐</span>
-                      <span className="metric-text"><strong>9.06</strong> Academic CGPA (B.Tech CSE AI &amp; ML)</span>
-                    </div>
-                    <div className="metric-row">
-                      <span className="metric-icon">🏆</span>
-                      <span className="metric-text"><strong>1st Place</strong> HackFest Winner (300+ Teams)</span>
-                    </div>
-                    <div className="metric-row">
                       <span className="metric-icon">🚀</span>
-                      <span className="metric-text"><strong>800+</strong> Attendees Reached in Developer Workshops</span>
+                      <span className="metric-text"><strong>120+</strong> LeetCode Algorithmic Problems Solved</span>
                     </div>
                     <div className="metric-row">
-                      <span className="metric-icon">⚡</span>
-                      <span className="metric-text"><strong>50+</strong> Live Demonstration Users for NLP Pipeline</span>
+                      <span className="metric-icon">⭐</span>
+                      <span className="metric-text"><strong>9.06</strong> Academic Excellence CGPA</span>
+                    </div>
+                    <div className="metric-row">
+                      <span className="metric-icon">💻</span>
+                      <span className="metric-text"><strong>6+</strong> Full-Stack &amp; AI Production Projects</span>
+                    </div>
+                    <div className="metric-row">
+                      <span className="metric-icon">🎟️</span>
+                      <span className="metric-text"><strong>800+</strong> Attendees Event Ticketing Architecture</span>
                     </div>
                   </div>
                 </div>
