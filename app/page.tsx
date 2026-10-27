@@ -8,12 +8,13 @@ import DepthCarousel from "./depth-carousel";
 const projects = [
   {
     no: "01",
-    title: "TaskTrackr",
-    type: "Backend engineering",
+    title: "EventVerse",
+    type: "Full-stack platform",
     description:
-      "Full-stack task management REST API built with Java and Spring Boot, implementing JWT-based authentication, role-aware CRUD endpoints, pagination, and Swagger-documented API contracts. Verified with JUnit5 and Mockito unit/integration test suites.",
-    stack: "Java · Spring Boot · JPQL · RBAC · JWT · JUnit5 · Mockito",
-    source: "https://github.com/Jayaveer08/TaskTrackr",
+      "Full-stack event ticketing platform with React, TypeScript and Supabase PostgreSQL Realtime, supporting interactive seat map selection with live availability updates. Integrated Stripe payment processing via Supabase Edge Function with client-side PDF ticket generation.",
+    stack: "React · TypeScript · Supabase · Stripe",
+    source: "https://github.com/Jayaveer08/event-verse",
+    live: "https://eventverse-lime.vercel.app",
   },
   {
     no: "02",
@@ -27,13 +28,12 @@ const projects = [
   },
   {
     no: "03",
-    title: "EventVerse",
-    type: "Full-stack platform",
+    title: "TaskTrackr",
+    type: "Backend engineering",
     description:
-      "Full-stack event ticketing platform with React, TypeScript and Supabase PostgreSQL Realtime, supporting interactive seat map selection with live availability updates. Integrated Stripe payment processing via Supabase Edge Function with client-side PDF ticket generation.",
-    stack: "React · TypeScript · Supabase · Stripe",
-    source: "https://github.com/Jayaveer08/event-verse",
-    live: "https://eventverse-lime.vercel.app",
+      "Full-stack task management REST API built with Java and Spring Boot, implementing JWT-based authentication, role-aware CRUD endpoints, pagination, and Swagger-documented API contracts. Verified with JUnit5 and Mockito unit/integration test suites.",
+    stack: "Java · Spring Boot · JPQL · RBAC · JWT · JUnit5 · Mockito",
+    source: "https://github.com/Jayaveer08/TaskTrackr",
   },
   {
     no: "04",
