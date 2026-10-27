@@ -207,15 +207,8 @@ export default function HeroConsole() {
                     <span className="user">jayaveer@dev</span>:<span className="path">~</span>$ open --socials
                   </div>
                   <div className="term-socials">
-                    <a
-                      href="https://mail.google.com/mail/?view=cm&fs=1&to=nallapatijayaveer@gmail.com"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="social-term-link"
-                      onClick={copyEmail}
-                      title="Open in Gmail (copies email address to clipboard)"
-                    >
-                      <span>Email:</span> {copied ? "Copied to clipboard! Opening Gmail... ✓" : "nallapatijayaveer@gmail.com ↗"}
+                    <a href="mailto:nallapatijayaveer@gmail.com" className="social-term-link">
+                      <span>Email:</span> nallapatijayaveer@gmail.com ↗
                     </a>
                     <a href="https://github.com/Jayaveer08" target="_blank" rel="noreferrer" className="social-term-link">
                       <span>GitHub:</span> github.com/Jayaveer08 ↗
