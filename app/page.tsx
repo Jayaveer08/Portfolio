@@ -8,35 +8,54 @@ import DepthCarousel from "./depth-carousel";
 const projects = [
   {
     no: "01",
+    title: "TaskTrackr",
+    type: "Backend engineering",
+    description:
+      "Full-stack task management REST API built with Java and Spring Boot, implementing JWT-based authentication, role-aware CRUD endpoints, pagination, and Swagger-documented API contracts. Verified with JUnit5 and Mockito unit/integration test suites.",
+    stack: "Java · Spring Boot · JPQL · RBAC · JWT · JUnit5 · Mockito",
+    source: "https://github.com/Jayaveer08/TaskTrackr",
+  },
+  {
+    no: "02",
+    title: "Smart Blog Studio",
+    type: "Full-stack platform",
+    description:
+      "Production-grade full-stack blog platform REST endpoints with a FastAPI backend and React/Lexical rich-text editor frontend, applying OOP and modular software design; secured with JWT auth and MongoDB persistence. Configured CI/CD via GitHub Actions with Pytest tests.",
+    stack: "Python · FastAPI · MongoDB · JWT · Gemini API · Docker · React",
+    source: "https://github.com/Jayaveer08/Smart-Blog-editor",
+    live: "https://smart-blog-editor-eight.vercel.app",
+  },
+  {
+    no: "03",
     title: "EventVerse",
     type: "Full-stack platform",
     description:
-      "Full-stack event ticketing platform with React 18 + TypeScript and Supabase (PostgreSQL + Auth + Realtime), interactive seat map selection, Stripe payment processing, and PDF ticket generation.",
+      "Full-stack event ticketing platform with React, TypeScript and Supabase PostgreSQL Realtime, supporting interactive seat map selection with live availability updates. Integrated Stripe payment processing via Supabase Edge Function with client-side PDF ticket generation.",
     stack: "React · TypeScript · Supabase · Stripe",
     source: "https://github.com/Jayaveer08/event-verse",
     live: "https://eventverse-lime.vercel.app",
   },
   {
-    no: "02",
-    title: "TaskTrackr",
-    type: "Backend engineering",
-    description:
-      "Java Spring Boot Task Manager API with MySQL, Spring Security, JWT authentication, BCrypt hashing, REST endpoints for tasks/projects with pagination, and Mockito service-layer unit tests.",
-    stack: "Java 17 · Spring Boot · Spring Security · MySQL · JWT",
-    source: "https://github.com/Jayaveer08/TaskTrackr",
-  },
-  {
-    no: "03",
-    title: "Smart Blog Studio",
-    type: "AI-assisted product",
-    description:
-      "Enterprise-grade Wix-inspired blog editor & publishing studio built with React, Lexical WYSIWYG Framework, FastAPI backend, real-time AI Script Assistant, bubble selection menus, and live site previewing.",
-    stack: "React · Lexical · FastAPI · Tailwind · Gemini AI",
-    source: "https://github.com/Jayaveer08/Smart-Blog-editor",
-    live: "https://smart-blog-editor-eight.vercel.app",
-  },
-  {
     no: "04",
+    title: "Supply Chain Demand Predictor",
+    type: "Machine learning & backend",
+    description:
+      "Real-world sales demand forecasting system enabling businesses to forecast demand in real time, powered by three ML models behind a Python FastAPI backend with an interactive Streamlit frontend.",
+    stack: "Python · FastAPI · Streamlit · Machine Learning",
+    source: "https://github.com/Jayaveer08",
+  },
+  {
+    no: "05",
+    title: "TextBrief",
+    type: "Natural language processing",
+    description:
+      "End-to-end Python NLP text-summarization pipeline using Hugging Face Transformer models (BART), applying model evaluation and complexity trade-offs to deliver context-aware abstractive summaries on long-form input, deployed on Streamlit.",
+    stack: "Python · BART · Hugging Face · Streamlit",
+    source: "https://github.com/Jayaveer08/TextBrief",
+    live: "https://textbrief.streamlit.app/",
+  },
+  {
+    no: "06",
     title: "Brahmo India Clinical AI",
     type: "Healthcare AI platform",
     description:
@@ -46,84 +65,77 @@ const projects = [
     live: "https://brahmo-india-clinical-silk.vercel.app",
   },
   {
-    no: "05",
-    title: "Moodify",
-    type: "Applied AI",
-    description:
-      "AI-powered music recommendation system that detects mood from voice using Librosa pitch/tempo analysis, Whisper speech recognition, text sentiment analysis, and personalised Spotify recommendations.",
-    stack: "Python · Flask · Whisper · Librosa · Spotify API",
-    source:
-      "https://github.com/Jayaveer08/Moodify-Let-Your-Mood-Choose-the-Music",
-    live: "https://moodstream-q4lr.onrender.com/",
-  },
-  {
-    no: "06",
+    no: "07",
     title: "Dual-Agent AI Assistant",
     type: "Generative AI / RAG",
     description:
-      "Multi-agent placement assistant with a FAQ Agent and Placement Agent orchestrated via LangChain, FAISS vector search, and Hugging Face embeddings for retrieval-augmented generation (RAG).",
+      "Multi-agent placement assistant with FAQ and Placement agents orchestrated via LangChain, FAISS vector search, and Hugging Face embeddings for retrieval-augmented generation (RAG).",
     stack: "LangChain · FAISS · Hugging Face · FastAPI · React",
     source: "https://github.com/Jayaveer08",
-  },
-  {
-    no: "07",
-    title: "TextBrief",
-    type: "Natural language processing",
-    description:
-      "Context-aware abstractive summariser using BART and Hugging Face Transformers, optimised inference pipeline with 88% modal accuracy, deployed as an interactive Streamlit web app.",
-    stack: "Python · BART · Hugging Face · Streamlit",
-    source: "https://github.com/Jayaveer08/TextBrief",
-    live: "https://textbrief.streamlit.app/",
   },
 ];
 
 const skillGroups = [
   {
     label: "Languages",
-    chips: ["Java", "Python", "TypeScript", "JavaScript", "SQL", "C"],
+    chips: ["Python", "Java", "C", "TypeScript", "JavaScript", "SQL"],
+  },
+  {
+    label: "Core CS",
+    chips: [
+      "Data Structures & Algorithms",
+      "Object-Oriented Design",
+      "Complexity Analysis",
+      "System Design",
+    ],
   },
   {
     label: "Backend",
     chips: [
-      "Spring Boot",
-      "Spring Security",
       "FastAPI",
-      "Flask",
+      "Spring Boot",
       "REST APIs",
-      "JWT",
+      "JWT Auth",
+      "Spring Security",
+      "Flask",
+    ],
+  },
+  {
+    label: "Web & Frontend",
+    chips: [
+      "React",
+      "TypeScript",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "Next.js",
+      "Lexical",
+    ],
+  },
+  {
+    label: "Databases",
+    chips: ["SQL", "MongoDB", "Supabase PostgreSQL", "MySQL"],
+  },
+  {
+    label: "Testing & QA",
+    chips: [
+      "Pytest",
+      "JUnit 5",
+      "Mockito",
+      "Test Plan Development",
+      "QA Practices",
+    ],
+  },
+  {
+    label: "DevOps & Tools",
+    chips: [
       "Docker",
-    ],
-  },
-  {
-    label: "Frontend",
-    chips: ["React", "HTML", "CSS", "Tailwind", "Lexical", "Next.js"],
-  },
-  {
-    label: "AI / ML",
-    chips: [
-      "Hugging Face",
-      "BART",
-      "LangChain",
-      "FAISS",
-      "Gemini API",
-      "Whisper",
-      "Librosa",
-    ],
-  },
-  {
-    label: "Data & Cloud",
-    chips: [
-      "MySQL",
-      "MongoDB",
-      "Supabase",
-      "PostgreSQL",
+      "Git",
+      "GitHub",
       "GitHub Actions",
+      "Swagger UI",
       "Vercel",
     ],
-  },
-  {
-    label: "Testing & Tools",
-    chips: ["JUnit 5", "Mockito", "Postman", "Swagger UI", "Git"],
   },
 ];
 
@@ -172,14 +184,16 @@ export default function Home() {
                 <p>
                   I&apos;m Jayaveer Nallapati, a final-year B.Tech Computer
                   Science (AI &amp; ML) student at Sreyas Institute of
-                  Engineering &amp; Technology. I build scalable backend systems
-                  and intelligent AI-powered products — turning complex problems
-                  into fast, meaningful, production-ready code.
+                  Engineering and Technology (CGPA: 9.06). Experienced in building,
+                  testing, and debugging full-stack and backend systems in Python,
+                  FastAPI, and Java/Spring Boot.
                 </p>
                 <p>
-                  Strong foundation in DSA, OOP, and SOLID principles — I approach
-                  every problem with clarity and precision. I believe the best
-                  software is invisible — it just works.
+                  Strong foundation in data structures, algorithms, object-oriented design,
+                  and complexity analysis with hands-on exposure to REST API design,
+                  relational &amp; NoSQL databases, and QA practices like Pytest and JUnit.
+                  Comfortable translating ambiguous requirements into working solutions
+                  in agile, product-driven teams.
                 </p>
                 <a
                   className="about-ref-cta"
@@ -271,9 +285,9 @@ export default function Home() {
           <div className="section-shell">
             <div className="exp-ref-head">
               <h2 id="exp-title">
-                In a previous <em className="accent-italic">life.</em>
+                Experience &amp; <em className="accent-italic">Background.</em>
               </h2>
-              <span>2025&ndash;2026</span>
+              <span>2024&ndash;2026</span>
             </div>
             <div className="exp-ref-list">
               <article className="exp-ref-row">
@@ -282,65 +296,63 @@ export default function Home() {
                   <time>May<br/>— July</time>
                 </div>
                 <div className="exp-ref-body">
-                  <h3>AI Intern</h3>
-                  <p className="exp-ref-company">SWECHA</p>
+                  <h3>Software Development Intern</h3>
+                  <p className="exp-ref-company">SWECHA · TELANGANA, INDIA</p>
                   <ul className="exp-bullets">
-                    <li>Built and deployed <strong>TextBrief</strong> — an NLP summarisation tool using BART and Hugging Face Transformers.</li>
-                    <li>Optimised the inference pipeline achieving <strong>88% modal accuracy</strong> for high-volume text inputs.</li>
-                    <li>Demonstrated the interactive Streamlit application live to <strong>50+ attendees</strong> across technical sessions.</li>
+                    <li>Designed and built <strong>TextBrief</strong>, an end-to-end Python NLP text-summarization pipeline using Hugging Face Transformer models (BART), applying model evaluation and complexity trade-offs to deliver context-aware abstractive summaries on long-form input.</li>
+                    <li>Deployed as an interactive Streamlit web app; demonstrated to <strong>50+ users</strong> across internship sessions with real-time inference on variable-length documents.</li>
+                    <li>Optimized the Hugging Face inference pipeline for throughput and quality by removing redundant tokenization steps and benchmarking output across input-length thresholds.</li>
                   </ul>
                   <div className="exp-ref-chips">
                     <span>PYTHON</span>
+                    <span>NLP (BART)</span>
                     <span>HUGGING FACE</span>
-                    <span>NLP</span>
                     <span>STREAMLIT</span>
+                    <span>PIPELINE OPTIMIZATION</span>
                   </div>
                 </div>
-
               </article>
 
               <article className="exp-ref-row">
                 <div className="exp-ref-meta">
                   <span className="exp-ref-no">02</span>
-                  <time>August<br/>— November</time>
+                  <time>February<br/>— April</time>
                 </div>
                 <div className="exp-ref-body">
-                  <h3>Technical Lead &amp; Developer</h3>
-                  <p className="exp-ref-company">SDC — SREYAS DEVELOPER CONFERENCE</p>
+                  <h3>Software Development Intern</h3>
+                  <p className="exp-ref-company">EVOASTRA · TELANGANA, INDIA</p>
                   <ul className="exp-bullets">
-                    <li>Spearheaded technical operations and digital systems across the <strong>Sreyas Developer Conference (SDC) Technical Event</strong>.</li>
-                    <li>Managed digital logistics, registration workflows, and platform execution for over <strong>800+ attendees</strong>.</li>
-                    <li>Coordinated cross-functional teams to deliver live event streaming, schedule coordination, and technical showcases.</li>
+                    <li>Built a real-world <strong>Supply Chain Demand Prediction System</strong> enabling businesses to forecast sales demand in real time, powered by three ML models behind a Python FastAPI backend with a Streamlit frontend.</li>
+                    <li>Participated in requirement gathering, system design discussions, testing, and validation across the SDLC, ensuring data accuracy through structured reporting and QA checks in an agile team.</li>
                   </ul>
                   <div className="exp-ref-chips">
-                    <span>EVENT MANAGEMENT</span>
-                    <span>TECHNICAL LEADERSHIP</span>
-                    <span>SYSTEM DEVELOPMENT</span>
+                    <span>PYTHON</span>
+                    <span>FASTAPI</span>
+                    <span>MACHINE LEARNING</span>
+                    <span>STREAMLIT</span>
+                    <span>SDLC &amp; QA</span>
                   </div>
                 </div>
-
               </article>
 
               <article className="exp-ref-row">
                 <div className="exp-ref-meta">
                   <span className="exp-ref-no">03</span>
-                  <time>February<br/>— April</time>
+                  <time>Technical Lead<br/>&amp; Organizer</time>
                 </div>
                 <div className="exp-ref-body">
-                  <h3>Intern</h3>
-                  <p className="exp-ref-company">EVOASTRA</p>
+                  <h3>Technical Lead &amp; Event Organizer</h3>
+                  <p className="exp-ref-company">SDG / DEVELOPER WORKSHOPS</p>
                   <ul className="exp-bullets">
-                    <li>Completed a <strong>remote engineering internship</strong>, collaborating with development teams to build scalable software solutions.</li>
-                    <li>Engineered responsive web interfaces and integrated RESTful API endpoints for client-facing applications.</li>
-                    <li>Participated in active code reviews, bug fixes, and feature testing to ensure production code quality.</li>
+                    <li>Organized the SDG technical event and led developer workshops reaching <strong>800+ attendees</strong> across multiple sessions.</li>
+                    <li>Managed end-to-end technical planning, logistics, digital workflows, and coordination across student developer teams.</li>
                   </ul>
                   <div className="exp-ref-chips">
-                    <span>SOFTWARE DEVELOPMENT</span>
-                    <span>REMOTE INTERNSHIP</span>
-                    <span>WEB APPLICATIONS</span>
+                    <span>TECHNICAL LEADERSHIP</span>
+                    <span>WORKSHOPS</span>
+                    <span>EVENT ARCHITECTURE</span>
                   </div>
                 </div>
-
               </article>
             </div>
 
@@ -348,30 +360,30 @@ export default function Home() {
             <div className="edu-bar">
               <div className="edu-bar-left">
                 <span className="edu-bar-label">EDUCATION</span>
-                <h3 className="edu-bar-degree">B.Tech in Computer Science &amp; Engineering</h3>
-                <span className="edu-bar-specialization">Specialization: Artificial Intelligence &amp; Machine Learning</span>
+                <h3 className="edu-bar-degree">Bachelor of Technology - Computer Science And Engineering</h3>
+                <span className="edu-bar-specialization">Specialization: Artificial Intelligence &amp; Machine Learning (AI&amp;ML) · CGPA: 9.06</span>
               </div>
               <div className="edu-bar-right">
-                <span className="edu-bar-school">Sreyas Institute of Engineering &amp; Technology</span>
-                <span className="edu-bar-year">2023 — 2027</span>
+                <span className="edu-bar-school">Sreyas Institute of Engineering and Technology</span>
+                <span className="edu-bar-year">2023 — 2027 · Telangana, India</span>
               </div>
             </div>
 
             {/* Achievements & Certifications */}
             <div className="achievements-ref">
-              <div className="achievements-ref-label">— Certifications &amp; Achievements</div>
+              <div className="achievements-ref-label">— Achievements &amp; Highlights</div>
               <div className="achievements-ref-grid">
                 <div>
-                  <h4>1st Place — HackFest</h4>
-                  <p>Out of 300+ teams · 24-hour hackathon winner</p>
+                  <h4>1st Place — HackFest Winner</h4>
+                  <p>Secured 1st place out of 300+ teams, designing and deploying a full-stack web application under a 24-hour time constraint.</p>
                 </div>
                 <div>
-                  <h4>SDC Technical Organiser</h4>
-                  <p>800+ attendees · End-to-end event execution &amp; logistics</p>
+                  <h4>SDG Technical Event &amp; Workshops</h4>
+                  <p>Organized technical events and developer workshops reaching 800+ attendees with end-to-end planning and logistics.</p>
                 </div>
                 <div>
-                  <h4>Hackathons, Tech &amp; Sports</h4>
-                  <p>Active participant in hackathons, technical events &amp; sports</p>
+                  <h4>AI/ML Prototypes &amp; Projects</h4>
+                  <p>Building hackathon prototypes, production-grade APIs, and exploring cutting-edge AI/ML models.</p>
                 </div>
               </div>
             </div>
