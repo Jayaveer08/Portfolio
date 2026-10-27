@@ -9,9 +9,13 @@ export default function HeroConsole() {
   const [copied, setCopied] = useState(false);
 
   const copyEmail = () => {
-    navigator.clipboard.writeText("nallapatijayaveer@gmail.com");
+    try {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText("nallapatijayaveer@gmail.com");
+      }
+    } catch {}
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    setTimeout(() => setCopied(false), 2500);
   };
 
   return (
@@ -203,8 +207,15 @@ export default function HeroConsole() {
                     <span className="user">jayaveer@dev</span>:<span className="path">~</span>$ open --socials
                   </div>
                   <div className="term-socials">
-                    <a href="mailto:nallapatijayaveer@gmail.com" className="social-term-link">
-                      <span>Email:</span> nallapatijayaveer@gmail.com ↗
+                    <a
+                      href="https://mail.google.com/mail/?view=cm&fs=1&to=nallapatijayaveer@gmail.com"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="social-term-link"
+                      onClick={copyEmail}
+                      title="Open in Gmail (copies email address to clipboard)"
+                    >
+                      <span>Email:</span> {copied ? "Copied to clipboard! Opening Gmail... ✓" : "nallapatijayaveer@gmail.com ↗"}
                     </a>
                     <a href="https://github.com/Jayaveer08" target="_blank" rel="noreferrer" className="social-term-link">
                       <span>GitHub:</span> github.com/Jayaveer08 ↗

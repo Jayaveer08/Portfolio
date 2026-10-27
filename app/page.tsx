@@ -4,6 +4,7 @@ import HeroConsole from "./hero-console";
 import GooeyNav from "./gooey-nav";
 import CustomCursor from "./custom-cursor";
 import DepthCarousel from "./depth-carousel";
+import EmailLink from "./email-link";
 
 const projects = [
   {
@@ -195,12 +196,12 @@ export default function Home() {
                   Comfortable translating ambiguous requirements into working solutions
                   in agile, product-driven teams.
                 </p>
-                <a
+                <EmailLink
                   className="about-ref-cta"
-                  href="mailto:nallapatijayaveer@gmail.com"
+                  copiedText="Opening Gmail... ✓"
                 >
                   Get in touch →
-                </a>
+                </EmailLink>
               </div>
 
               {/* Engineering Methodology Flowchart: THINK → BUILD → IMPROVE */}
@@ -445,12 +446,12 @@ export default function Home() {
               <br />
               it work.
             </h2>
-            <a
+            <EmailLink
               className="contact-link"
-              href="mailto:nallapatijayaveer@gmail.com"
+              copiedText="Email copied! Opening Gmail... ↗"
             >
               nallapatijayaveer@gmail.com <span aria-hidden="true">↗</span>
-            </a>
+            </EmailLink>
             <div className="contact-socials">
               <a href="tel:+919949703104" className="contact-social-link" aria-label="Call Jayaveer">
                 +91 99497 03104 <span aria-hidden="true">↗</span>
